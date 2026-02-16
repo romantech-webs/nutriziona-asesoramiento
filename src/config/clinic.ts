@@ -1,307 +1,351 @@
 export const clinic = {
-  // === IDENTIDAD ===
-  name: "Centro Estética CyM",
-  logo: "/images/logo.jpg" as string | null,
-  tagline: "Tu Centro de Belleza en Puertollano",
-  description: "Centro Estética CyM es un centro de belleza integral en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados para realzar tu belleza natural.",
-
-  // === PALETA (Elegante/Spa) ===
+  name: "nutriZiona - Asesoramiento Nutricional y Gastronómico",
+  logo: "/images/logo.png",
+  tagline: "Nutrición con evidencia científica en Mérida",
+  description: "nutriZiona es tu centro de Asesoramiento Nutricional y Gastronómico en Mérida, especializado en cambio de hábitos alimentarios sostenibles. Con Jorge al frente, ofrecemos planes personalizados de pérdida de peso saludable, nutrición clínica y coaching nutricional sin dietas restrictivas. Nuestros clientes destacan resultados reales sin pasar hambre, aprendiendo a mantener su peso a largo plazo. Valorados con 4.6 estrellas en Google por 28 pacientes satisfechos.",
   colors: {
-    primary: "#C9A86C",      // Dorado elegante
-    secondary: "#2D2D2D",    // Gris sofisticado
-    accent: "#D4A574",       // Rosa champán
-    neutral: "#FAF8F5",      // Crema cálido
+    primary: "#98a6b5",
+    secondary: "#2e3236",
+    accent: "#b7c7df",
+    neutral: "#f7f8f9"
   },
-
-  // === CONTACTO ===
-  phone: "629 61 04 71",
-  whatsapp: "+34629610471",
-  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de estética.",
-  email: "info@esteticacym.es",
-
-  // === UBICACIÓN ===
+  phone: "649 31 90 41",
+  whatsapp: "+34649319041",
+  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros servicios de nutrición.",
+  email: "",
   address: {
-    street: "C. Numancia, 40",
-    city: "Puertollano",
-    province: "Ciudad Real",
-    postalCode: "13500",
-    country: "España",
+    street: "Av. Reina Sofia, 82, 06800 Mérida, Badajoz, Spain",
+    city: "Mérida",
+    province: "",
+    postalCode: "06800",
+    country: "España"
   },
-  googleMapsUrl: "https://maps.google.com/?q=C.+Numancia+40+Puertollano",
-  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.5!2d-4.1078!3d38.6872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d1f1a8a8a8a8a%3A0x0!2sC.+Numancia%2C+40%2C+13500+Puertollano!5e0!3m2!1ses!2ses!4v1",
-  coordinates: { lat: 38.6872, lng: -4.1078 },
-
-  // === HORARIOS ===
+  googleMapsUrl: "https://maps.google.com/?cid=9622955253470665097&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  googleMapsEmbed: "https://maps.google.com/maps?q=nutriZiona%20-%20Asesoramiento%20Nutricional%20y%20Gastron%C3%B3mico%20%4038.9244%2C-6.32592&z=16&output=embed",
+  coordinates: {
+    lat: 38.9244,
+    lng: -6.32592
+  },
   schedule: [
-    { days: "Lunes - Viernes", hours: "10:00 - 20:00" },
-    { days: "Sábado", hours: "Cerrado" },
-    { days: "Domingo", hours: "Cerrado" },
+    {
+      days: "lunes",
+      hours: "9:30–13:30"
+    },
+    {
+      days: "martes - miércoles",
+      hours: "9:30–13:30, 17:00–20:00"
+    },
+    {
+      days: "jueves - viernes",
+      hours: "9:30–13:30"
+    },
+    {
+      days: "sábado - domingo",
+      hours: "Cerrado"
+    }
   ],
-
-  // === REDES SOCIALES ===
   social: {
-    instagram: "https://www.instagram.com/centrodeesteticacym/",
-    facebook: "https://www.facebook.com/centrodeesteticacym/",
-    linkedin: null as string | null,
-    tiktok: null as string | null,
+    instagram: null,
+    facebook: null,
+    linkedin: null,
+    tiktok: null
   },
-
-  // === RESEÑAS GOOGLE ===
   reviews: {
-    rating: 4.7,
-    count: 190,
-    url: "#",
+    rating: 4.6,
+    count: 28,
+    url: "https://maps.google.com/?cid=9622955253470665097&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
     featured: [
       {
-        author: "Eva León",
+        author: "Susana Burgos",
         rating: 5,
-        text: "Increíble trabajo de micropigmentación. El resultado es muy natural y el trato inmejorable. Sin duda volveré para más tratamientos.",
-        date: "hace 2 semanas",
+        text: "Sin duda, el mejor! Con Jorge todo ha sido muy sencillo, jamás he pasado hambre y he comido de todo desde la primera semana, menús variados y equilibrados...como él dice, no es una dieta, es un menú, acordé a lo que necesita el cuerpo para alimentarse bien...nada de pollo y piña, y así semanas para depurar. Un año más tarde, no he cogido ni un kilo de los 10 que perdí, no porque siga \"a dieta\", sino porque he establecido una nueva relación con la comida, que es lo más importante; muchísimas gracias Jorge!",
+        date: "Hace 3 años"
       },
       {
-        author: "Javier Padilla",
+        author: "sofia tena risquez",
         rating: 5,
-        text: "Excelente profesionalidad en todos los tratamientos. Las instalaciones son muy modernas y el ambiente muy relajante.",
-        date: "hace 1 mes",
+        text: "La verdad es que ha sido para mi un gran acierto, el haber dado con este gran profesional. A mi me costaba mucho, y te da una confianza desde el principio, quitando importancia a esos miedos y vergüenza que se tienen, de una manera que te hace llegar a conseguir lo que es tan ansiado, ya no por estética sino por salud.\nY la verdad es que he conseguido unos resultados que ni yo misma me lo creía.",
+        date: "Hace 3 años"
       },
       {
-        author: "Melanie Ponce",
+        author: "Mercedes Re.va.",
         rating: 5,
-        text: "Me encantó el resultado del microblading. Quedé muy satisfecha con el trabajo realizado. Muy recomendable.",
-        date: "hace 1 mes",
+        text: "Después de probar muchas dietas entre por casualidad y le comenté que me costaba  mucho perder peso.Jorge me animo a que probara con sus consejos y su pautas con la comida y la verdad es que en casi un año he perdido 15 kilos con su ayuda, el trato es muy amable . Ahora ya estoy solo con el mantenimiento y no he vuelto a coger peso . Estoy encantada",
+        date: "Hace 3 años"
       },
       {
-        author: "María Teresa Salguero",
+        author: "Susana Gil Gabardino",
         rating: 5,
-        text: "El mejor centro de estética de Puertollano. Tratamientos de calidad y atención personalizada. Volveré seguro.",
-        date: "hace 2 meses",
+        text: "Genial!!!!! He conseguido mi reto gracias a Jorge. Además de aprender mucho sobre llevar una dieta saludable. Desde el minuto uno me ha dado consejos y unos menú con los que: no se pasa hambre, estas ganando en salud y además bajando de peso.",
+        date: "Hace 4 años"
       },
-    ],
+      {
+        author: "La Perru de ReYes",
+        rating: 5,
+        text: "ha sido todo un acierto haber contactado con Jorge, pierdes peso sin pasar hambre y si tienes alguna duda te la soluciona al momento\nrecomendado 💯💪",
+        date: "Hace 3 meses"
+      }
+    ]
   },
-
-  // === SERVICIOS ===
   services: [
     {
-      id: "micropigmentacion",
-      name: "Micropigmentación",
-      description: "Técnica avanzada de maquillaje semipermanente para cejas, labios y ojos. Resultados naturales y duraderos que realzan tu belleza.",
-      benefits: ["Resultados naturales", "Larga duración", "Mínimo mantenimiento"],
-      icon: "Sparkles",
+      id: "perdida-peso-saludable",
+      name: "Pérdida de Peso Saludable",
+      description: "Programa de adelgazamiento sostenible basado en menús variados y equilibrados, sin restricciones extremas. No pasarás hambre ni comerás solo pollo y piña. Aprenderás a establecer una nueva relación con la comida que te permitirá mantener tu peso ideal a largo plazo sin efecto rebote.",
+      benefits: [
+        "Pérdida de peso progresiva sin pasar hambre",
+        "Menús variados que incluyen todos los grupos alimentarios",
+        "Mantenimiento del peso perdido a largo plazo"
+      ],
+      icon: "TrendingDown"
     },
     {
-      id: "microblading",
-      name: "Microblading de Cejas",
-      description: "Técnica pelo a pelo para cejas perfectamente definidas. Efecto hiperrealista que simula el vello natural.",
-      benefits: ["Efecto pelo a pelo", "Cejas definidas", "Aspecto natural"],
-      icon: "Feather",
+      id: "coaching-nutricional",
+      name: "Coaching Nutricional",
+      description: "Acompañamiento personalizado para cambiar tus hábitos alimentarios de forma definitiva. Te damos confianza desde el primer día, quitando importancia a miedos y vergüenzas. Trabajamos juntos para que consigas tus objetivos de salud, no solo de estética, con seguimiento continuo y resolución inmediata de dudas.",
+      benefits: [
+        "Apoyo constante y resolución de dudas al momento",
+        "Ambiente de confianza sin juicios",
+        "Cambio de hábitos sostenible y permanente"
+      ],
+      icon: "Target"
     },
     {
-      id: "depilacion-laser",
-      name: "Depilación Láser",
-      description: "Eliminación definitiva del vello con tecnología láser de última generación. Tratamientos seguros y efectivos.",
-      benefits: ["Resultados permanentes", "Sin dolor", "Piel suave"],
-      icon: "Zap",
+      id: "nutricion-clinica",
+      name: "Nutrición Clínica",
+      description: "Planes nutricionales terapéuticos para el manejo de patologías como diabetes, colesterol alto, hipertensión y problemas digestivos. Cada plan está diseñado según tus necesidades médicas específicas, mejorando tu salud sin sacrificar el placer de comer. Trabajamos en coordinación con tu equipo médico.",
+      benefits: [
+        "Control de patologías mediante alimentación",
+        "Planes adaptados a tus necesidades médicas",
+        "Mejora de analíticas y parámetros de salud"
+      ],
+      icon: "Heart"
     },
     {
-      id: "tratamientos-faciales",
-      name: "Tratamientos Faciales",
-      description: "Cuidados personalizados para cada tipo de piel. Hidratación profunda, antiedad y luminosidad para un rostro radiante.",
-      benefits: ["Piel rejuvenecida", "Hidratación profunda", "Luminosidad"],
-      icon: "Flower2",
+      id: "asesoramiento-gastronomico",
+      name: "Asesoramiento Gastronómico",
+      description: "Aprendizaje práctico sobre cómo alimentarte bien en tu día a día. Te enseñamos a elegir alimentos, planificar menús, cocinar de forma saludable y disfrutar de la comida sin culpa. Consejos y pautas que podrás aplicar toda la vida, convirtiendo la alimentación saludable en algo natural y placentero.",
+      benefits: [
+        "Aprende a planificar menús equilibrados",
+        "Técnicas de cocina saludable y práctica",
+        "Alimentación consciente y sin restricciones"
+      ],
+      icon: "Apple"
     },
     {
-      id: "tratamientos-corporales",
-      name: "Tratamientos Corporales",
-      description: "Tratamientos reductores, reafirmantes y anticelulíticos. Moldea tu silueta con las técnicas más avanzadas.",
-      benefits: ["Reduce centímetros", "Reafirma la piel", "Elimina celulitis"],
-      icon: "Heart",
+      id: "nutricion-deportiva",
+      name: "Nutrición Deportiva",
+      description: "Optimiza tu rendimiento físico y recuperación mediante una alimentación específica para deportistas. Planes nutricionales que se ajustan a tu tipo de actividad, intensidad y objetivos deportivos, mejorando tu energía, resistencia y composición corporal sin comprometer tu salud.",
+      benefits: [
+        "Mejora del rendimiento deportivo",
+        "Optimización de la recuperación muscular",
+        "Planes adaptados a tu actividad física"
+      ],
+      icon: "Dumbbell"
     },
     {
-      id: "manicura-pedicura",
-      name: "Manicura y Pedicura",
-      description: "Cuidado completo de manos y pies con esmaltes de alta calidad. Uñas perfectas con diseños personalizados.",
-      benefits: ["Uñas perfectas", "Manos cuidadas", "Diseños exclusivos"],
-      icon: "Hand",
+      id: "nutricion-infantil",
+      name: "Nutrición Infantil y Adolescentes",
+      description: "Educación nutricional para niños y adolescentes en todas las etapas de crecimiento. Creamos hábitos alimentarios saludables desde temprana edad, abordando problemas de peso, alergias alimentarias o necesidades especiales, siempre con un enfoque respetuoso y adaptado a cada familia.",
+      benefits: [
+        "Hábitos saludables desde la infancia",
+        "Crecimiento y desarrollo óptimos",
+        "Educación nutricional para toda la familia"
+      ],
+      icon: "Baby"
     },
     {
-      id: "extensiones-pestanas",
-      name: "Extensiones de Pestañas",
-      description: "Mirada impactante con extensiones de pestañas pelo a pelo. Efecto natural o dramático según tu preferencia.",
-      benefits: ["Mirada intensa", "Efecto natural", "Sin máscara"],
-      icon: "Eye",
+      id: "mantenimiento-peso",
+      name: "Programa de Mantenimiento",
+      description: "Una vez alcanzado tu objetivo, te acompañamos en la fase más importante: mantener tus resultados. Seguimiento periódico para consolidar tus nuevos hábitos, ajustar tu alimentación según tus necesidades cambiantes y asegurar que no recuperes el peso perdido. El verdadero éxito está en el largo plazo.",
+      benefits: [
+        "Consolidación de hábitos alimentarios",
+        "Prevención del efecto rebote",
+        "Seguimiento flexible y adaptado"
+      ],
+      icon: "Target"
     },
     {
-      id: "maquillaje-profesional",
-      name: "Maquillaje Profesional",
-      description: "Maquillaje para eventos especiales, novias y sesiones fotográficas. Realza tu belleza para cada ocasión.",
-      benefits: ["Look personalizado", "Alta duración", "Acabado profesional"],
-      icon: "Palette",
-    },
+      id: "educacion-nutricional",
+      name: "Educación Nutricional",
+      description: "Aprende los fundamentos de una alimentación saludable basada en evidencia científica. Te enseñamos a entender qué necesita tu cuerpo, cómo leer etiquetas, distinguir mitos de realidades y tomar decisiones informadas sobre tu alimentación. Conocimiento que te empodera para toda la vida.",
+      benefits: [
+        "Comprensión real de la nutrición",
+        "Autonomía en tus decisiones alimentarias",
+        "Desmontamos mitos y dietas milagro"
+      ],
+      icon: "Apple"
+    }
   ],
-
-  // === PROCESO ===
   process: [
     {
       step: 1,
-      title: "Contacta",
-      description: "Solicita tu cita de consulta inicial por teléfono o WhatsApp",
+      title: "Contacta con nosotros",
+      description: "Llama al 649 31 90 41 o escríbenos por WhatsApp para reservar tu primera consulta en nutriZiona Mérida. Te atenderemos personalmente y resolveremos tus dudas iniciales sobre el proceso."
     },
     {
       step: 2,
-      title: "Consulta",
-      description: "Analizamos tus necesidades y diseñamos el tratamiento ideal para ti",
+      title: "Primera valoración nutricional",
+      description: "En la consulta inicial realizamos una evaluación completa de tu situación actual, historial alimentario, objetivos de salud y estilo de vida. Creamos un ambiente de confianza donde puedes expresar tus miedos y preocupaciones sin juicios."
     },
     {
       step: 3,
-      title: "Tratamiento",
-      description: "Realizamos el tratamiento con las técnicas más avanzadas y productos de calidad",
+      title: "Tu plan personalizado",
+      description: "Diseñamos tu plan nutricional adaptado a tus necesidades, gustos y rutinas. Recibirás menús variados y equilibrados que incluyen todos los grupos de alimentos, consejos prácticos y pautas claras para implementar desde el primer día."
     },
     {
       step: 4,
-      title: "Resultados",
-      description: "Disfruta de resultados espectaculares y un seguimiento personalizado",
-    },
+      title: "Seguimiento y ajustes continuos",
+      description: "Te acompañamos con revisiones periódicas para evaluar tu progreso, ajustar el plan según tu evolución y resolver dudas al momento. Celebramos tus logros y te apoyamos en los desafíos hasta alcanzar y mantener tus objetivos."
+    }
   ],
-
-  // === POR QUÉ ELEGIRNOS ===
   whyUs: [
     {
-      title: "Especialistas en Micropigmentación",
-      description: "Técnicas avanzadas de micropigmentación y microblading con resultados naturales y duraderos",
-      icon: "Award",
+      title: "Resultados reales y duraderos",
+      description: "Con 4.6 estrellas en Google y 28 reseñas verificadas, nuestros clientes destacan pérdidas de peso de 10-15 kilos que se mantienen años después. No ofrecemos soluciones rápidas, sino cambios de hábitos sostenibles que transforman tu relación con la comida para siempre.",
+      icon: "TrendingDown"
     },
     {
-      title: "Tecnología de Vanguardia",
-      description: "Equipos de última generación para tratamientos más efectivos y seguros",
-      icon: "Cpu",
+      title: "Sin pasar hambre ni restricciones extremas",
+      description: "Nuestros planes incluyen menús variados y equilibrados desde la primera semana. Como destacan nuestros clientes: jamás pasarás hambre y comerás de todo. Nada de dietas milagro ni semanas comiendo solo pollo y piña. Alimentación real para resultados reales.",
+      icon: "Apple"
     },
     {
-      title: "Atención Personalizada",
-      description: "Cada clienta recibe un tratamiento único adaptado a sus necesidades y deseos",
-      icon: "UserCheck",
+      title: "Acompañamiento cercano y personalizado",
+      description: "Jorge y su equipo te dan confianza desde el primer día, quitando importancia a miedos y vergüenzas. Resolvemos tus dudas al momento y ajustamos el plan según tu evolución. Un trato amable y profesional que hace la diferencia en tu proceso de cambio.",
+      icon: "Heart"
     },
     {
-      title: "Valoración 4.7 Estrellas",
-      description: "190 clientas satisfechas nos avalan con excelentes valoraciones en Google",
-      icon: "Star",
-    },
+      title: "Método basado en evidencia científica",
+      description: "Trabajamos con asesoramiento nutricional y gastronómico fundamentado en ciencia, no en modas pasajeras. Aprenderás qué necesita tu cuerpo realmente para alimentarse bien, con consejos y pautas que podrás aplicar toda la vida. Conocimiento que te empodera.",
+      icon: "Target"
+    }
   ],
-
-  // === EQUIPO ===
   team: [
     {
-      name: "Centro Estética CyM",
-      role: "Especialistas en Micropigmentación",
+      name: "Jorge",
+      role: "Nutricionista y Director de nutriZiona",
       image: "/images/team/placeholder.jpg",
-      bio: "Profesionales apasionadas por la belleza y el cuidado personal. Con años de experiencia en micropigmentación, microblading y tratamientos estéticos, nos dedicamos a realzar la belleza natural de cada clienta.",
-    },
+      bio: "Dietistas-nutricionistas comprometidos con tu salud. En nutriZiona - Asesoramiento Nutricional y Gastronómico diseñamos planes nutricionales personalizados para alcanzar tus objetivos."
+    }
   ],
-
-  // === GALERÍA ===
   gallery: [
-    { src: "/images/gallery/local-fuera.webp", alt: "Fachada del Centro Estética CyM" },
-    { src: "/images/gallery/local-dentro.webp", alt: "Interior del centro - Recepción" },
-    { src: "/images/gallery/clinica-dentro1.webp", alt: "Sala de tratamientos" },
+    {
+      src: "/images/gallery/1.webp",
+      alt: "nutriZiona - Asesoramiento Nutricional y Gastronómico - Imagen 1"
+    },
+    {
+      src: "/images/hero.webp",
+      alt: "nutriZiona - Asesoramiento Nutricional y Gastronómico - Imagen 2"
+    },
+    {
+      src: "/images/gallery/3.webp",
+      alt: "nutriZiona - Asesoramiento Nutricional y Gastronómico - Imagen 3"
+    },
+    {
+      src: "/images/gallery/4.webp",
+      alt: "nutriZiona - Asesoramiento Nutricional y Gastronómico - Imagen 4"
+    },
+    {
+      src: "/images/gallery/5.webp",
+      alt: "nutriZiona - Asesoramiento Nutricional y Gastronómico - Imagen 5"
+    }
   ],
-
-  // === FAQ ===
   faq: [
     {
-      question: "¿Cuánto dura la micropigmentación?",
-      answer: "La micropigmentación puede durar entre 1 y 3 años dependiendo del tipo de piel, cuidados posteriores y la zona tratada. Ofrecemos retoques para mantener el resultado óptimo.",
+      question: "¿Voy a pasar hambre con los planes de nutriZiona?",
+      answer: "No, definitivamente no pasarás hambre. Nuestros clientes destacan precisamente esto en sus reseñas: pierdes peso comiendo de forma variada y equilibrada, sin restricciones extremas. Los menús incluyen todos los grupos de alimentos y están diseñados para satisfacer las necesidades de tu cuerpo. Como dice Jorge, no es una dieta, es un menú acorde a lo que necesita el cuerpo para alimentarse bien."
     },
     {
-      question: "¿Es doloroso el microblading de cejas?",
-      answer: "El procedimiento es prácticamente indoloro gracias a la aplicación de crema anestésica tópica. La mayoría de clientas describen la sensación como un ligero cosquilleo.",
+      question: "¿Cuánto tiempo tardaré en ver resultados?",
+      answer: "Los resultados varían según cada persona, pero nuestros clientes reportan pérdidas de peso progresivas y sostenibles: desde 10 kilos en un año hasta 15 kilos en ese mismo periodo. Lo más importante no es la velocidad, sino que los resultados sean duraderos. Nuestro enfoque se centra en el cambio de hábitos, no en dietas rápidas que generan efecto rebote."
     },
     {
-      question: "¿Cuántas sesiones necesito para la depilación láser?",
-      answer: "Generalmente se necesitan entre 6 y 8 sesiones espaciadas cada 4-6 semanas para obtener resultados óptimos. El número exacto depende del tipo de piel y vello.",
+      question: "¿Qué incluye el programa de mantenimiento?",
+      answer: "Una vez alcanzado tu objetivo de peso, el programa de mantenimiento de nutriZiona te ayuda a consolidar tus nuevos hábitos alimentarios para que no recuperes el peso perdido. Incluye seguimientos periódicos más espaciados, ajustes según tus necesidades y apoyo continuo. Nuestros clientes mantienen su peso años después porque han aprendido a comer de forma saludable de manera permanente."
     },
     {
-      question: "¿Qué cuidados necesito después de un tratamiento facial?",
-      answer: "Recomendamos evitar el sol directo, usar protección solar SPF50 y seguir la rutina de cuidados que te indicamos según tu tipo de piel.",
+      question: "¿Cómo es el seguimiento y la comunicación con el nutricionista?",
+      answer: "En nutriZiona ofrecemos un seguimiento cercano y personalizado. Realizamos revisiones periódicas presenciales para evaluar tu progreso y ajustar el plan. Además, si tienes dudas entre consultas, puedes contactarnos y te las resolvemos al momento. Jorge y su equipo se caracterizan por dar confianza desde el primer día y estar disponibles para apoyarte en todo el proceso."
     },
     {
-      question: "¿Ofrecéis tratamientos para novias?",
-      answer: "Sí, tenemos packs especiales para novias que incluyen tratamientos faciales, maquillaje de prueba y el día de la boda, manicura y más.",
+      question: "¿Trabajáis con personas que tienen dificultades para perder peso?",
+      answer: "Sí, es una de nuestras especialidades. Muchos de nuestros clientes habían probado múltiples dietas sin éxito antes de llegar a nutriZiona. Trabajamos con personas a las que les cuesta mucho perder peso, quitando importancia a miedos y vergüenzas, y creando un plan realista y sostenible. Los resultados hablan por sí solos: clientes que nunca pensaron que podrían conseguirlo finalmente lo logran."
     },
     {
-      question: "¿Las extensiones de pestañas dañan mis pestañas naturales?",
-      answer: "No, cuando se aplican correctamente por profesionales cualificados, las extensiones no dañan las pestañas naturales. Usamos adhesivos de alta calidad y técnicas seguras.",
+      question: "¿Qué diferencia a nutriZiona de otras clínicas de nutrición?",
+      answer: "Nuestro enfoque se basa en evidencia científica, no en dietas milagro. No te haremos comer solo pollo y piña durante semanas. Aprenderás a establecer una nueva relación con la comida que te permita mantener tus resultados sin estar permanentemente a dieta. Con 4.6 estrellas en Google y 28 reseñas, nuestros clientes destacan el trato cercano, los menús variados y los resultados duraderos."
     },
     {
-      question: "¿Cuánto dura una sesión de tratamiento facial?",
-      answer: "Dependiendo del tratamiento, las sesiones duran entre 45 y 90 minutos. Incluimos tiempo para la consulta inicial y recomendaciones personalizadas.",
+      question: "¿Puedo seguir el plan si tengo alguna patología como diabetes o colesterol?",
+      answer: "Sí, en nutriZiona diseñamos planes nutricionales clínicos adaptados a patologías específicas como diabetes, colesterol alto, hipertensión y problemas digestivos. Trabajamos para mejorar tu salud mediante la alimentación, no solo por estética. Cada plan se personaliza según tus necesidades médicas y, si es necesario, coordinamos con tu equipo médico habitual."
     },
     {
-      question: "¿Necesito cita previa?",
-      answer: "Sí, recomendamos siempre reservar cita previa para garantizar la disponibilidad y poder dedicarte el tiempo que mereces. Puedes reservar por teléfono o WhatsApp.",
-    },
+      question: "¿Cómo puedo reservar mi primera consulta en Mérida?",
+      answer: "Reservar tu consulta en nutriZiona es muy sencillo. Puedes llamarnos directamente al 649 31 90 41 o contactarnos por WhatsApp. Te atenderemos personalmente, resolveremos tus dudas iniciales y agendaremos tu primera valoración nutricional en nuestro centro de Mérida en el horario que mejor te convenga."
+    }
   ],
-
-  // === SEO ===
   seo: {
-    titleTemplate: "%s | Centro Estética CyM - Belleza en Puertollano",
-    defaultTitle: "Centro Estética CyM | Tu Centro de Belleza en Puertollano",
-    defaultDescription: "Centro de estética en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados. Cita previa: 629 61 04 71.",
+    titleTemplate: "%s | nutriZiona - Asesoramiento Nutricional y Gastronómico",
+    defaultTitle: "nutriZiona - Nutricionista en Mérida | Sin Dietas Milagro",
+    defaultDescription: "Centro de nutrición en Mérida especializado en pérdida de peso saludable y cambio de hábitos. Menús variados sin pasar hambre. 4.6★ en Google. Llama al 649 31 90 41.",
     keywords: [
-      "centro estética Puertollano",
-      "micropigmentación Puertollano",
-      "microblading cejas Puertollano",
-      "depilación láser Puertollano",
-      "tratamientos faciales Puertollano",
-      "extensiones pestañas Puertollano",
-      "maquillaje profesional",
-      "manicura pedicura",
-      "tratamientos corporales",
-      "belleza Puertollano",
-      "Centro Estética CyM",
-      "estética Ciudad Real",
+      "nutricionista Mérida",
+      "nutriZiona Mérida",
+      "asesoramiento nutricional Mérida",
+      "perder peso Mérida",
+      "dietista Mérida",
+      "nutrición clínica Mérida",
+      "coaching nutricional Mérida",
+      "cambio de hábitos alimentarios",
+      "nutricionista sin dietas milagro",
+      "adelgazar de forma saludable Mérida",
+      "nutrición deportiva Mérida",
+      "consulta nutrición Mérida"
     ],
-    ogImage: "/og-image.jpg",
+    ogImage: "/og-image.jpg"
   },
-
-  // === LEGAL ===
   legal: {
-    companyName: "Centro Estética CyM",
+    companyName: "nutriZiona - Asesoramiento Nutricional y Gastronómico",
     cif: "",
-    registeredAddress: "C. Numancia, 40, 13500 Puertollano, Ciudad Real",
+    registeredAddress: "Av. Reina Sofia, 82, 06800 Mérida, Badajoz, Spain, Mérida"
   },
-
-  // === UI COPY (driven by clinic type) ===
-  heroHeadline: ["Tu Centro de", "Belleza", "en Puertollano"],
-  heroDescription: "Realza tu belleza natural con tratamientos de micropigmentación, microblading y estética avanzada. Profesionales cualificadas y tecnología de vanguardia.",
-  specialty: "Micropigmentación",
-  ctaLabel: "Realza tu Belleza",
-  ctaHeadline: "¿Lista para brillar?",
-  ctaDescription: "Da el primer paso hacia tu mejor versión. Pide tu cita ahora y nuestro equipo te asesorará de forma personalizada.",
-  statsLabel: "Clientas",
-  schemaType: "BeautySalon",
+  heroHeadline: [
+    "Tu Centro de",
+    "Nutrición",
+    "en Mérida"
+  ],
+  heroDescription: "En nutriZiona te ayudamos a transformar tu relación con la comida mediante asesoramiento nutricional personalizado basado en evidencia científica. Sin dietas milagro, sin pasar hambre, con menús variados y equilibrados que se adaptan a lo que tu cuerpo realmente necesita. Aprende a comer bien y mantén tus resultados para siempre.",
+  specialty: "Cambio de hábitos alimentarios",
+  ctaLabel: "Tu Plan Nutricional",
+  ctaHeadline: "¿Listo para cambiar tu relación con la comida?",
+  ctaDescription: "Reserva tu primera consulta en nutriZiona Mérida y descubre cómo perder peso de forma saludable y sostenible, sin dietas restrictivas. Te acompañamos en cada paso hacia tu objetivo de salud.",
+  statsLabel: "Pacientes",
+  schemaType: "DieteticsAndNutrition",
   sectionCopy: {
     servicesLabel: "Nuestros Servicios",
     servicesTitle: "Tratamientos especializados",
-    servicesDescription: "Técnicas avanzadas de estética y belleza para realzar tu imagen y cuidar de ti.",
+    servicesDescription: "Soluciones profesionales adaptadas a tus necesidades de salud.",
     processLabel: "Cómo Trabajamos",
-    processTitle: "Tu camino hacia la belleza en 4 pasos",
+    processTitle: "Tu camino hacia la recuperación en 4 pasos",
     processDescription: "Un proceso simple y transparente diseñado para tu comodidad.",
     whyUsLabel: "Por Qué Elegirnos",
-    whyUsTitle: "Tu belleza, nuestra pasión",
-    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para realzar tu belleza natural.",
+    whyUsTitle: "Tu salud, nuestra prioridad",
+    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para cuidar de tu salud.",
     reviewsLabel: "Opiniones",
-    reviewsTitle: "Lo que dicen nuestras clientas",
+    reviewsTitle: "Lo que dicen nuestros pacientes",
     galleryLabel: "Instalaciones",
-    galleryTitle: "Conoce nuestro centro",
-    galleryDescription: "Un espacio diseñado para tu bienestar y relajación",
+    galleryTitle: "Conoce nuestra clínica",
+    galleryDescription: "Un espacio diseñado para tu bienestar y recuperación",
     faqLabel: "FAQ",
     faqTitle: "Preguntas frecuentes",
-    faqDescription: "Resolvemos las dudas más comunes de nuestras clientas.",
+    faqDescription: "Resolvemos las dudas más comunes de nuestros pacientes.",
     locationLabel: "Ubicación",
     locationTitle: "Cómo llegar",
     teamLabel: "Nuestro Equipo",
-    teamTitle: "Profesionales especializadas",
-    teamDescription: "Experiencia y pasión al servicio de tu belleza",
-  },
+    teamTitle: "Profesionales especializados",
+    teamDescription: "Experiencia y dedicación al servicio de tu salud"
+  }
 }
 
 export type Clinic = typeof clinic
